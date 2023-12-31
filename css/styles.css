@@ -150,11 +150,16 @@ section {
 	font-family: myFirstFont;
 	font-size: 1em;
 }
+
+.myFirstFont {
+	font-family: myFirstFont !important;
+	font-size: 2.5em !important;
+}
 .mad-skills:after {
     content: attr(data-content);  
 }
 
-.container {
+.container, .d-container{
 	display: block;
 	max-width: 680px;
 	margin: auto;
@@ -331,7 +336,7 @@ section {
 
 /* GALLERY */
 
-.gallery {
+.gallery, .d-gallery {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -339,13 +344,13 @@ section {
 	padding: 60px 0;
 }
 
-.g-item {
+.g-item, .d-item {
 	aspect-ratio: 4 / 3;
 	max-width: 380px;
 	padding: 5px;
 }
 
-.g-image {
+.g-image, .d-image{
 	position: relative;
 	width: 100%;
 }
@@ -515,7 +520,15 @@ section {
 
 /* Desktop menu */
 @media all and (min-width: 900px) {
-	
+		
+	.gallery {
+		justify-content: flex-start;
+	}
+
+	.g-item {
+		max-width: calc(100vw / 3.018);
+		padding: 0.92vw
+	}
 	.heading {
     font-size: 3em;
 	}
@@ -578,5 +591,38 @@ section {
 	.item a:hover {
 		background-color: transparent;
 		color: var(--color-accent);
+	}
+}
+
+@media all and (min-width: 1900px) {
+	body
+	{
+	    font-size: .6vw;
+	}
+	section {
+		padding: 5vw 0;
+	}
+	.container {
+		max-width: 60%;
+	}
+
+	.gallery {
+		padding: 3vw 0;
+	}
+
+	input, textarea, label, li {
+		padding: .5vw !important;
+		font-size: .9vw !important;
+	}
+	input[type="submit"] {
+		width: 500px !important;
+	}
+
+	nav {
+		height: 5vh;
+	}
+
+	.logo a, .toggle a {
+		font-size: 1.7vw !important;
 	}
 }
