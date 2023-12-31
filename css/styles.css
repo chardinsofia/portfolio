@@ -19,6 +19,9 @@
   --color-accent2: #FF6D4D;
 }
 
+#shadow-host-companion {
+	display: none;
+}
 
 /* Scrollbar style */
 
