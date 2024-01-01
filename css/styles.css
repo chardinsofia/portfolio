@@ -157,8 +157,8 @@ section {
 	font-size: 1em;
 }
 
-.myFirstFont {
-	font-family: myFirstFont !important;
+.mySecFont {
+	font-family: mySecFont !important;
 	font-size: 2.5em !important;
 }
 .mad-skills:after {
@@ -389,18 +389,10 @@ section {
 	border: none;
 }
 
-.contact-form input:auto-fill, .contact-form textarea:auto-fill {
+.contact-form input:auto-fill, .contact-form textarea:auto-fill, input:-internal-autofill-selected, textarea:-internal-autofill-selected {
 		background: transparent !important;
-	outline: none;
-	border: none;
-}
-
-.contact-form input {
-
-}
-
-.contact-form textarea {
-
+		outline: none;
+		border: none;
 }
 
 .contact-form input[type="submit"] {
