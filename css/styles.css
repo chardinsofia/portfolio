@@ -146,6 +146,12 @@ section {
   position: absolute;
 }
 
+#lang {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
 #skill {
 	font-family: myFirstFont;
 	font-size: 1em;

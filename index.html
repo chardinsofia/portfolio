@@ -18,19 +18,24 @@
   		</div>	
 	  	<ul class="menu">
 	  		<li class="item">
-	  			<a href="#home">Home</a>
+	  			<a href="#" lang="en">Home</a>
+	  			<a href="#" lang="es">Inicio</a>
 	  		</li>
 	  		<li class="item">
-	  			<a href="#about">About</a>
+	  			<a href="#about" lang="en">About</a>
+	  			<a href="#about" lang="es">Sobre mi</a>
 	  		</li>
 	  		<li class="item">
-	  			<a href="#design">Design</a>
+	  			<a href="#design" lang="en">Design</a>
+	  			<a href="#design" lang="es">Diseño</a>
 	  		</li>
 	  		<li class="item">
-	  			<a href="#shooting">Shooting</a>
+	  			<a href="#shooting" lang="en">Shooting</a>
+	  			<a href="#shooting" lang="es">Fotografía</a>
 	  		</li>
 	  		<li class="item">
-	  			<a href="#writing">Writing</a>
+	  			<a href="#writing" lang="en">Writing</a>
+	  			<a href="#writing" lang="es">Escritura</a>
 	  		</li>
 	  		<!--
 	  		<li class="item">
@@ -41,7 +46,8 @@
 	  		</li>
 	  		-->
 	  		<li class="item">
-	  			<a href="#contact">Contact</a>
+	  			<a href="#contact" lang="en">Contact</a>
+	  			<a href="#contact" lang="es">Contacto</a>
 	  		</li>
 	  		<!--
 	  		<li class="item button">
@@ -59,42 +65,71 @@
 	  		</li>
 	  	</ul>
 	  </nav>
+
 	  <div class="page">
-	    <section id="home">
-	    	<div class="container">
-	    		<h1 class="heading">Welcome</h1>
-	    		<p class="text">
-	    			I'm a <span class="accent">creative creator</span>, designer and developer based in Argentina. Focused on <span class="accent">turning ideas, zeros and ones into great experiences.</span>
-	    		</p>
-	    		<p class="text">
-	    			My lasts experiences as an employee were at some amazing start-ups such as Badmirror.TV (a remote position as a Front End Developer while I was living in Denmark with a Working Holiday visa) and Xappia -acquired by Globant- (on-site in Buenos Aires, just before going abroad, my really first experience in IT as a Salesforce Trainee Developer).
-	    		</p>
-	    		<p class="text">
-	    			I'm currently working as a freelancer and creating some cool designs and personal projects on my own, open to new opportunities that could arise. Be free to explore my portfolio and contact me at any time.
-	    		</p>
-	    	</div>
-	    </section>
+		  	<form id="lang">
+			    <label for="lang-switch">
+			        <span class="comments" lang="es">Lenguaje</span>
+			        <span class="comments" lang="en">Language</span>
+			    </label>
+			    <select id="lang-switch">
+			        <option value="en">English</option>
+			        <option value="es" selected>Español</option>
+			    </select>
+			</form>
 
 	    <section id="about">
 	    	<div class="container">
-	    		<h1 class="heading">I am Sofia,<span id="skill" class="text accent mad-skills" data-content="HTML">skilled at </span>
-				</h1>
-		    	<p class="text">
+
+	    		<h1 class="heading">
+	    			<span lang="en">I am Sofia, creator, designer and developer, </span><span class="accent" lang="en">skilled at</span>
+					<span lang="es">Soy Sofia, creadora, diseñadora y desarrolladora </span><span class="accent" lang="es">con destreza en</span>
+	    			<span id="skill" class="accent mad-skills" data-content="HTML"></span>
+	    		</h1>
+	    		<h1 class="heading" lang="en">Located in Argentina, focused on turning ideas, zeros and ones into great experiences.</h1>
+	    		<h1 class="heading" lang="es">Desde Argentina, convierto ideas, ceros y unos en experiencias geniales.</h1>
+
+		    	<p class="text" lang="en">
 	    			With a great eye for details, I find and bring up some beauty and practical thinking into projects, giving them life with creativity and always pursuing improvement in the process and high-quality performance in every piece of work. 
 
 	    			A wide range of experience in different fields such as photography, videography, design, code and writing made of me some kind of chameleon with the ability to adapt, learn at a fast pace and give the best in everything.
 	    		</p>
-	    		<p class="text">Take a look at my CV → <a class="accent" href="https://links.ternadia.com/365013" target="_blank">Spanish</a> / <a class="accent" href="https://links.ternadia.com/78276a" target="_blank">English</a></p>
+	    		<p class="text" lang="en">Take a look at my CV → <a class="accent" href="https://links.ternadia.com/365013" target="_blank">Spanish</a> / <a class="accent" href="https://links.ternadia.com/78276a" target="_blank">English</a></p>
+
+		    	<p class="text" lang="es">
+	    			Con un buen ojo para el detalle, encuentro y traigo la belleza y el pensamiento crítico a los proyectos, dandoles vida con creatividad y siempre buscando mejorar en el proceso y lograr performance de alta calidad en cada pieza de trabajo. Un gran rango de experiencia en diferentes campos como la fotografía, videografía, diseño, código y escritura hizo de mi una especie de camaleón, con la habilidad de adaptarme, aprender rápidamente y dar lo mejor en todo.
+	    		</p>
+	    		<p class="text" lang="en">
+	    			My lasts experiences as an employee were at some amazing start-ups such as Badmirror.TV (a remote position as a Front End Developer while I was living in Denmark with a Working Holiday visa) and Xappia -acquired by Globant- (on-site in Buenos Aires, just before going abroad, my really first experience in IT as a Salesforce Trainee Developer).
+	    		</p>
+	    		<p class="text" lang="es">
+	    			Mis ultimas experiencias fueron en start-ups increíbles como Badmirror.TV (posición remota como desarrolladora Font-End mientras estaba viviendo en Dinamarca con la visa Working Holiday) y Xappia -adquirida por Globant- (posición on-site en Buenos Aires, justo antes de partir al extranjero, fue mi primera experiencia formal en el mundo IT como Desarrolladora Salesforce Trainee).
+	    		</p>
+	    		<p class="text" lang="en">
+	    			I'm currently working as a freelancer and creating some cool designs and personal projects on my own, open to new opportunities that could arise. Be free to explore my portfolio and contact me at any time.
+	    		</p>
+	    		<p class="text" lang="es">
+	    			Actualmente estoy trabajado como freelancer y creando diseños y desarrollando proyectos por mi cuenta, abierta a nuevas oportunidades que puedan surgir. Se libre de explorar mi portfolio y contactarme si es de tu interés.
+	    		</p>
+	    		<p class="text" lang="es">Échale un vistazo a mi CV → <a class="accent" href="https://links.ternadia.com/365013" target="_blank">en Español</a> / <a class="accent" href="https://links.ternadia.com/78276a" target="_blank">en Inglés</a></p>
 	    	</div>
 	    </section>
 
 		<section id="design">
 			<div class="container">
-				<h1 class="heading">Design</h1>
+				<h1 class="heading" lang="en">Design</h1>
+				<h1 class="heading" lang="es">Diseño</h1>
+
 	    		<p class="text accent myFirstFont">SINNER</p>
-	    		<span class="comments">logo design</span>
-	    		<p class="text">The client didn't have any existing brand assets, so the logo was needed to be created completely from scratch, representing their core brand values and being suitable and attractive to their target audience in the clothing industry. They were looking for something modern, robust and trendy but with a touch of corporate restraint.</p>
-	    		<p class="text">The first results that you can visualize up-next with a black background are the final ones. After the t-shirt mock-up, the last ones with white background are some alternatives we also liked, but which didn't make it to the end. These are here just to show a bit more from the process of this case.</p>
+	    		<span class="comments" lang="en">logo creation</span>
+	    		<span class="comments" lang="es">creación de logo</span>
+	    		<p class="text" lang="en">The client didn't have any existing brand assets, so the logo was needed to be created completely from scratch, representing their core brand values and being suitable and attractive to their target audience in the clothing industry. They were looking for something modern, robust and trendy but with a touch of corporate restraint.
+	    		</p>
+	    		<p class="text" lang="es">El cliente no tenía ningún activo de marca existente, por lo que era necesario crear el logotipo completamente desde cero, representando los valores fundamentales de su marca y haciendolo atractivo para su público en la industria de la confección. Buscaba algo moderno y robusto pero con un toque de moderación corporativa.
+	    		</p>
+	    		<p class="text" lang="en">The first results that you can visualize up-next with a black background are the final ones. After the t-shirt mock-up, the last ones with white background are some alternatives we also liked, but which didn't make it to the end. These are here just to show a bit more from the process of this case.</p>
+	    		<p class="text" lang="es">Los primeros resultados que podrás visualizar a continuación con un fondo negro son los definitivos. Después de la maqueta de camiseta, las últimas con fondo blanco son algunas alternativas que también nos gustaron, pero que no llegaron al final. Estos están aquí sólo para mostrar un poco más del proceso de este caso.
+	    		</p>
 	    		<div class="d-container">
 					<div class="d-gallery">
 						<div class="d-item">
@@ -119,10 +154,12 @@
 				</div>
 
 	    		<p class="text accent myFirstFont">DVK music</p>
-	    		<span class="comments">EP cover design</span>
-	    		<p class="text">This was a very interesting project for a talented techno DJ from Buenos Aires. He had in mind very clearly that he wanted to use one of my photographies for the cover, in black and white and with a simple typography simply aligned, so we explore some options and he loved this low angle shot of the beautiful Gaudí's expressive church building La Sagrada Familia, with the moon in the background.</p>
-	    		<p class="text">Up next: full photography, typography selected and final cover.</p>
-
+	    		<span class="comments" lang="en">EP cover design</span>
+	    		<span class="comments" lang="es">diseño de portada para EP</span>
+	    		<p class="text" lang="en">This was a very interesting project for a talented techno DJ from Buenos Aires. He had in mind very clearly that he wanted to use one of my photographies for the cover, in black and white and with a simple typography simply aligned, so we explore some options and he loved this low angle shot of the beautiful Gaudí's expressive church building La Sagrada Familia, with the crescent moon in the background.</p>
+	    		<p class="text" lang="en">Up next: full photography, typography selected and final cover.</p>
+				<p class="text" lang="es">Este fue un proyecto muy interesante para un talentoso DJ techno de Buenos Aires. Tenía muy claro que quería usar una de mis fotografías para la portada, en blanco y negro y con una tipografía sencilla simplemente alineada, así que exploramos algunas opciones y le encantó esta toma de ángulo contrapicado de la hermosa y expresiva iglesia de Gaudí. La Sagrada Familia, con la luna creciente de fondo.</p>
+	    		<p class="text" lang="es">A continuación: fotografía completa, tipografía seleccionada y portada final.</p>
 	    		<div class="d-container">
 					<div class="d-gallery">
 						<div class="d-item">
@@ -137,9 +174,12 @@
 					</div>
 				</div>
 
-				<p class="text accent myFirstFont">Deck</p>
-	    		<span class="comments">Deck of cards, instructions book, stickers.</span>
-	    		<p class="text">Graphic design to print a deck of cards laminated both sides with the botanic paintings artwork of my client, and a little book for instructions. Stickers of the paintings were also part of the set.</p>
+				<p class="text accent myFirstFont" lang="en">Cards</p>
+				<p class="text accent myFirstFont" lang="es">Cartas</p>
+	    		<span class="comments" lang="en">Deck of cards, instructions book, stickers.</span>
+	    		<span class="comments" lang="es">Mazo de cartas, libro de instrucciones y adhesivos.</span>
+	    		<p class="text" lang="en">Graphic design for a deck of cards laminated both sides with the botanic paintings artwork of my client, and a little book for instructions. Stickers of the paintings were also part of the set.</p>
+	    		<p class="text" lang="es">Diseño gráfico para mazo de cartas laminadas en ambos lados, con el trabajo artístico de pinturas en acuarela realizadas por la clienta, un pequeño libro de instrucciones y adhesivos.</p>
 
 	    		<div class="d-container">
 					<div class="d-gallery">
@@ -156,19 +196,32 @@
 
 	    <section id="shooting">
 	    	<div class="container">
-		    	<h1 class="heading">Shooting</h1>
-		    	<p class="text">
+		    	<h1 class="heading" lang="en">Shooting</h1>
+		    	<h1 class="heading" lang="es">Fotografía</h1>
+		    	<p class="text" lang="en">
 		    		Photography always keeps me grounded. When my father hand me over an old camera, a little bit more stubborn version of me at the age of 14 develop her first 35mm film roll that came up entirely underexposed. I remember being completely angry and frustrated, taking the <i>Nikon F70</i> printed manual book and reading it all at once. It was like a super technical and complete analog photography masterclass. After that I was very pleased to have perfectly balanced and exposed pictures of my garden, my cat, my friends, the place I used to go to... That first approaches teach me to respect both the tool and the knowleadge, to not giving up and keeping the experiments on going. I built myself on that time as a very strict and perfectionist photographer. I've studied Photographic Expression in UNSAM, and almost got a Diplome. Unfortunately, I wasn't too good at the part of finishing degrees at that time.
 		    	</p>
-				<p class="text">
+				<p class="text" lang="es">
+		    		La fotografía es mi cable a tierra. Cuando mi papá me pasó una antigua cámara, una version un poco más testaruda de mi a los 14 años mandó a revelar su primer rollo de 35mm, que resultó completamente subexpuesto. Recuerdo estar totalmente enojada y frustrada, agarrar el manual de la <i>Nikon F70</i> y leerlo de un tirón. Fue como una masterclass super técnica y completa de fotografía análoga. Después de eso estuve muy contenta de poder tomar fotografías perfectamente balanceadas de mi jardín, mi gato, mis amigos, los lugares a los que solía ir... Ese primer acercamiento me enseñó a respetar tanto a la herramienta como al conocimiento, a no darme por vencida y continuar con los experimentos. Por esos tiempos, me desarrollé como una estricta y perfeccionista fotógrafa. Estudié Expresión fotográfica en UNSAM, y casi obtengo el diploma. Desafortunadamente, no era muy buena en la parte de terminar las carreras en ese entonces.
+		    	</p>
+				<p class="text" lang="en">
 					From developing film and editing images, the love for colors and textures grew in me, and after a few years of still photography, I started filming and editing audiovisual material. I found the search of harmony between sound and visuals very gratifying, it was a very good experience to learn and evolve in AV post-edition. All of this was mostly product of self-taught learning, experimentation, research and advices from colleagues and friends. I've always been an entrepreneur, enthusiast and curious person, but I must say, I did have some hard times, going through lapses of lack of inspiration and low self-esteem, but that's the funny part, those phases are part of the whole picture, and make the things I do, and the person I make of myself be better. So, if you're having a hard time, dont hesitate to write me or share it with someone, you'd be surprise of how easy the process can be when you take it as your own and let it be part of your development.
 		    	</p>
-		    	<p class="text">
+		    	<p class="text" lang="es">
+					De revelar películas y editar imágenes, el amor por los colores y las texturas creció en mi. Luego de unos años de fotografía comencé a filmar y editar material audiovisual. Encuentro la búsqueda de armonía entre el audio y la imágen como algo muy gratificante, es una bella experiencia aprender y evolucionar en la post-producción audiovisual. Casi todo esto es producto de el aprendizaje autodidacta, la experimentación, investigación y consejos de colegas, familia y amigos. Siempre fui emprendedora, entusiasta yu curiosa, pero debo decir, tuve momentos difíciles, lapsos de poca inspiración y baja autoestima. Sin embargo, esa es la parte curiosa, esas fases forman parte de todo el proceso, y mientras más las integras, mejor puedes trabajar y mejorar. Entonces, si estás teniendo un momento dificil, no dudes en escribirme o compartirlo con alguien, e incluso, volcarlo de alguna manera en tu arte, te sorprenderías de cuánto más ameno puede ser el proceso si lo aceptas y lo dejas ser parte de tu crecimiento.
+		    	</p>
+		    	<p class="text" lang="en">
 		    		A few years ago, in some unfortunate circumstance, I lost thousands of hours of filming and a massive quantity of photographs from almost 10 years of work and trips around the world. I will never have those back, but this is some of what was left from that time, and I'm very happy to be able to give you, at least a glimpse of what it has been.
 			    </p>
+			    <p class="text" lang="es">
+		    		Algunos años atrás, en una circunstancia muy desafortunada, perdí cientos de horas de filmación y una cantidad masiva de fotografías de casi 10 años de trabajo y viajes por el mundo. Nunca podré recuperarlas, pero esto es algo de lo que quedó de ese tiempo. Me da felicidad poder compartir aunque sea un brillito de todo ese tiempo. 
+			    </p>
 			    <br>
-				<p class="text">
+				<p class="text" lang="en">
 					Taken either with my phone <i>SM-J400M</i>, an <i>Olympus OM-D E-M10 Mark II</i> (very lightweight and versatile digital camera) or a <i>Canon EOS 6D</i> (the last camera I had, that I used to carry everywhere, which in another bad move was stolen) and of course, my beloved <i>Olympus OM-1 (+50mm f/1.8)</i>, a beautiful film camera from the '70s that is now being used and cared for by my sister (my favorite photographer).
+				</p>
+				<p class="text" lang="es">
+					Tomadas tanto con mi celular <i>SM-J400M</i>, una <i>Olympus OM-D E-M10 Mark II</i> (una cámara digital moderna muy versátil y liviana) o con la <i>Canon EOS 6D</i> (la última cámara que tuve, que cargaba llevandola a todos lados y que en otra oportunidad lamentable fue robada) o, por supuesto, con mi querida <i>Olympus OM-1 (+50mm f/1.8)</i>, una hermosa cámara analógica de los '70 que ahora está siendo usada y cuidada por mi hermana, mi fotógrafa favorita.
 				</p>
 			</div>
 			<div class="g-container">
@@ -239,18 +292,24 @@
 
 	    <section id="writing">
 			<div class="container">
-	    	<h1 class="heading">Writing</h1>
-	    	<p class="text">
+	    	<h1 class="heading" lang="en">Writing</h1>
+	    	<h1 class="heading" lang="es">Escritura</h1>
+	    	<p class="text" lang="en">
 	    		Explorations, brain dumps, short stories poems and songs. Different topics such as personal experiences and sensations, philosophy and thoughts, art, and some peculiar characters and stories.
 			</p>
 
+	    	<p class="text" lang="es">
+	    		Exploraciones, brain dumps, cuentos, poemas y canciones. Sobre diferentes temas tales como experiencias y sensaciones personales, filosofía y pensamientos, arte y algunos personajes e historias peculiares.
+			</p>
 			<ul class="w-list">
 				<li class="w-item">
 					<a class="w-link" href="" target="_blank">
 						<div class="w-wrapper">
 							<div class="w-name">
-								<span class="w-title">Poerty ↗</span>
-								<span class="w-descr">Explorations, sensations, memories, life itself and a few poems.</span>
+								<span class="w-title" lang="en">Poerty ↗</span>
+								<span class="w-title" lang="es">Poseía ↗</span>
+								<span class="w-descr" lang="en">Explorations, sensations, memories, life itself and a few poems.</span>
+								<span class="w-descr" lang="es">Exploraciones, sensaciones, recuerdos, la vida y algunos poemas.</span>
 							</div>
 							<div class="w-date">2022</div>
 						</div>
@@ -260,8 +319,10 @@
 					<a class="w-link" href="" target="_blank">
 						<div class="w-wrapper">
 							<div class="w-name">
-								<span class="w-title">Short stories ↗</span>
-								<span class="w-descr">Some things I've made up by the joy of playing with words</span>
+								<span class="w-title" lang="en">Short stories ↗</span>
+								<span class="w-title" lang="es">Relatos cortos ↗</span>
+								<span class="w-descr" lang="en">Some things I've made up by the joy of playing with words</span>
+								<span class="w-descr" lang="es">Algunas cosas que inventé por el placer de jugar con las palabras</span>
 							</div>
 							<div class="w-date">2023</div>
 						</div>
@@ -272,8 +333,10 @@
 					<a class="w-link" href="" target="_blank">
 						<div class="w-wrapper">
 							<div class="w-name">
-								<span class="w-title">Talking about some things ↗</span>
-								<span class="w-descr">Philosophic startpoints about some themes as fear, orquids, Bruce Lee, cinema, and more.</span>
+								<span class="w-title" lang="en">Talking about some things ↗</span>
+								<span class="w-title" lang="es">Hablando de las cosas ↗</span>
+								<span class="w-descr" lang="en">Philosophic startpoints about some themes as fear, orquids, Bruce Lee, cinema, and more.</span>
+								<span class="w-descr" lang="es">Puntos de partida filosóficos sobre algunos temas como el miedo, las orquideas, Bruce Lee, el cine y más.</span>
 							</div>
 							<div class="w-date">2021</div>
 						</div>
@@ -283,8 +346,10 @@
 					<a class="w-link" href="" target="_blank">
 						<div class="w-wrapper">
 							<div class="w-name">
-								<span class="w-title">Lyrics ↗</span>
-								<span class="w-descr">Text where to find music in</span>
+								<span class="w-title" lang="en">Lyrics ↗</span>
+								<span class="w-descr" lang="en">Text where to find music in</span>
+								<span class="w-title" lang="es">Letras ↗</span>
+								<span class="w-descr" lang="es">Textos en los que encuentro música</span>
 							</div>
 							<div class="w-date">2022</div>
 						</div>
@@ -294,8 +359,10 @@
 					<a class="w-link" href="" target="_blank">
 						<div class="w-wrapper">
 							<div class="w-name">
-								<span class="w-title">The Bullshit Book ↗</span>
-								<span class="w-descr">...or "How to create conversations"</span>
+								<span class="w-title" lang="en">The Bullshit Book ↗</span>
+								<span class="w-descr" lang="en">...or "How to create conversations"</span>
+								<span class="w-title" lang="es">El libro de m&@$#- ↗</span>
+								<span class="w-descr" lang="es">o "Cómo crear conversaciones"</span>
 							</div>
 							<div class="w-date">2023</div>
 						</div>
@@ -305,29 +372,34 @@
 					<a class="w-link" href="" target="_blank">
 						<div class="w-wrapper">
 							<div class="w-name">
-								<span class="w-title">The Living Thing  ↗</span>
-								<span class="w-descr">First attempt of script. Uncomplete. Maybe just some random philosophical conversations.</span>
+								<span class="w-title">The Living Thing ↗</span>
+								<span class="w-descr">First attempt of script. Only in English. Uncomplete. Maybe just some random philosophical conversations.</span>
 							</div>
 							<div class="w-date">2023</div>
 						</div>
 					</a>
 				</li>
 			</ul>
-			<p class="comments">For sharing your impressions, doing collaborations or so, please write me to <a href="mailto:chardinsofia@gmail.com">chardinsofia@gmail.com</a> or go directly to the <a href="#contact">contact form</a> below this section</p>
+			<p class="comments" lang="en">For sharing your impressions, doing collaborations or so, please write me to <a href="mailto:chardinsofia@gmail.com">chardinsofia@gmail.com</a> or go directly to the <a href="#contact">contact form</a></p>
+			<p class="comments" lang="es">Para compartir tus impresiones o hacer colaboraciones podés escribirme a <a href="mailto:chardinsofia@gmail.com">chardinsofia@gmail.com</a> o ir directamente al <a href="#contact">formulario de contacto</a></p>
 		</div>
 	    </section>
 
 	    <section id="contact">
 	    	<div class="container">
-	    		<h1 class="heading">Talk it out</h1>
-	    		<p class="text accent">♫ speak about it, or my love you start to doubt it ♫</p>
+	    		<h1 class="heading" lang="en">Talk it out</h1>
+	    		<h1 class="heading" lang="es">Contacto</h1>
+	    		<p class="text accent" lang="en">♫ speak about it, or my love you start to doubt it ♫</p>
+	    		<p class="text accent" lang="es">♫ Ya estás aquí y el paso que dimos es causa y es efecto. Cruza el amor, yo cruzaré los dedos, y gracias por venir ♫</p>
 
 	    		<form class="contact-form">
-	    			<label for="fname">Name</label>
-				    <input type="text" id="fname" name="firstname" placeholder="Your name" required>
+	    			<label for="fname" lang="en">Name</label>
+	    			<label for="fname" lang="es">Nombre</label>
+				    <input type="text" id="fname" name="firstname" required>
 
-				    <label for="subject">Message</label>
-				    <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+				    <label for="subject" lang="en">Message</label>
+				    <label for="subject" lang="es">Mensaje</label>
+				    <textarea id="subject" name="subject" style="height:200px"></textarea>
 
 				    <input type="submit" value="Submit">
 	    		</form>
