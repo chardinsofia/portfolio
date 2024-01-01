@@ -156,7 +156,9 @@ section {
 	font-family: myFirstFont;
 	font-size: 1em;
 }
-
+.right {
+	text-align: right !important;
+}
 .mySecFont {
 	font-family: mySecFont !important;
 	font-size: 2.5em !important;
